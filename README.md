@@ -1,3 +1,29 @@
+# Infofluencer Dashboard
+
+Bu proje, Infofluencer için hazırlanan bir frontend case study uygulamasıdır.  
+Kullanıcı giriş yaptıktan sonra dashboard ekranında KPI kartları ve takipçi grafiği görebilir.
+
+---
+
+## Nasıl çalıştırırım?
+1. npm install
+2. npm run dev
+3. Tarayıcıda http://localhost:3000/login
+
+## Kullanılan teknolojiler
+- Next.js (App Router) + TypeScript
+- TailwindCSS
+- Recharts
+- (Opsiyonel: shadcn/ui)
+
+## Tasarım tercihleri (2-3 madde)
+- Minimal, beyaz zemin + pembe vurgu ile okunabilirlik ön planda.
+- Mobil uyumlu sidebar (hamburger) ile küçük ekranlar göz önünde bulunduruldu.
+- KPI kartları hızlı bakış için net, grafik detay için Recharts kullanıldı.
+
+----------
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
