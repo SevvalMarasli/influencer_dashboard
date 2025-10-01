@@ -18,13 +18,15 @@ module.exports = {
         cardBg: "#FFFFFF",
         softPink: "#FFC0CB",
         softBlue: "#ADD8E6",
+        darkPurple: "#21001E",
       },
       boxShadow: {
         // Kartın hafif gölgesini iyileştirmek için
         xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
       },
       fontFamily: {
-        arial: ["Arial", "Helvetica", "sans-serif"],
+        lato: ["var(--font-lato)"],
+        poppins: ["var(--font-poppins)"],
       },
     },
   },
