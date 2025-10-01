@@ -4,6 +4,7 @@ module.exports = {
     "./app/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -19,6 +20,9 @@ module.exports = {
         softPink: "#FFC0CB",
         softBlue: "#ADD8E6",
         darkPurple: "#21001E",
+        primaryBlue: "#eff3f5",
+        royalPurple: "#562576",
+        deepNavy: "#232b4a",
       },
       boxShadow: {
         // Kartın hafif gölgesini iyileştirmek için

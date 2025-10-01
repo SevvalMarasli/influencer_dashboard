@@ -24,7 +24,7 @@ export default function LoginPage() {
 
     // Doğru email ve şifre girildiyse dashboard'a yönlendir
     if (email === LOGIN_EMAIL && password === LOGIN_PASSWORD) {
-      router.push("/dashboard");
+      router.push("/Dashboard");
     } else {
       // Yanlış bilgi -> hata mesajı
       setError("Email veya şifre hatalı.");
@@ -33,7 +33,7 @@ export default function LoginPage() {
 
   return (
     <div
-      className="w-screen min-h-screen flex items-center justify-center p-4 font-playfair"
+      className="w-screen min-h-screen flex items-center justify-center p-4"
       // Arka plan gradyanı
       style={{
         background:
@@ -57,7 +57,7 @@ export default function LoginPage() {
 
           {/* Başlık */}
           <h1
-            className="font-extrabold text-darkPurple tracking-wide text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
+            className="font-extrabold text-darkPurple tracking-wide text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-poppins"
           >
             INFOFLUENCER
           </h1>
@@ -67,7 +67,7 @@ export default function LoginPage() {
         {/* Form alanı */}
         <form
           onSubmit={handleSubmit}
-          className="w-full flex flex-col gap-6 sm:gap-9 items-center tracking-wide"
+          className="w-full flex flex-col gap-6 sm:gap-9 items-center tracking-wide font-lato"
         >
           {/* Email input */}
           <input
