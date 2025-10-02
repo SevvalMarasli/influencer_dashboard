@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Lato, Poppins } from "next/font/google";
+import { Lato } from "next/font/google";
 import "./globals.css";
 
 // Fonts
@@ -8,13 +8,6 @@ const lato = Lato({
   weight: ["400", "700"],
   variable: "--font-lato",
 });
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-alan-sans",
-});
-
 
 // Metadata (sekme başlığı, favicon vs.)
 export const metadata: Metadata = {
@@ -33,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${lato.variable} ${poppins.variable} antialiased`}
+        className={`${lato.variable} antialiased`}
       >
         {children}
       </body>

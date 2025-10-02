@@ -31,7 +31,6 @@ module.exports = {
       },
       fontFamily: {
         lato: ["var(--font-lato)"],
-        poppins: ["var(--font-poppins)"],
       },
     },
   },
