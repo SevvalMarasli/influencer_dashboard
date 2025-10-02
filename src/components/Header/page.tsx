@@ -7,7 +7,7 @@ const Header: React.FC = () => {
       <header className="w-full max-w-full sm:max-w-5xl bg-white rounded-xl shadow-xl flex justify-between items-center px-3 py-2 sm:px-4 sm:py-4 gap-6">
         
         {/* Logo */}
-        <h1 className="text-2xl sm:text-3xl font-extrabold
+        <h1 className="text-xl sm:text-3xl font-extrabold
                        bg-gradient-to-r from-royalPurple to-deepNavy 
                        bg-clip-text text-transparent">
           Infofluencer
