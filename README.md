@@ -17,7 +17,7 @@ Bu proje, modern frontend geliştirme standartlarına uygun olarak aşağıdaki 
    ⚙️ Proje Kurulumu ve Çalıştırma
 Bu projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin:
 **1- Depoyu Klonlayın:**
-git clone git@github.com:SevvalMarasli/influencer_dashboard.git
+git clone https://github.com/SevvalMarasli/influencer_dashboard.git
 cd infofluencer_dashboard
 
 **2- Bağımlılıkları Yükleyin:**
