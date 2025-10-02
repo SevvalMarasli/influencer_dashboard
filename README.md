@@ -1,62 +1,47 @@
-# Infofluencer Dashboard
+   🚀 Infofluencer Dashboard Uygulaması
+Bu proje, bir mini "Influencer Dashboard" uygulamasının frontend case dokümanına uygun olarak geliştirilmiş tek sayfalık bir uygulamadır.
 
-Bu proje, Infofluencer için hazırlanan bir frontend case study uygulamasıdır.  
-Kullanıcı giriş yaptıktan sonra dashboard ekranında KPI kartları ve takipçi grafiği görebilir.
+Uygulama, temel bir Login ekranı ve oturum açıldıktan sonra erişilebilen Dashboard sayfasından oluşur.
 
----
+   🛠️ Teknik Gereksinimler ve Kullanılan Teknolojiler
+Bu proje, modern frontend geliştirme standartlarına uygun olarak aşağıdaki teknolojilerle oluşturulmuştur:
+| Alan | Teknoloji / Kütüphane | Açıklama | 
+ | ----- | ----- | ----- | 
+| **Framework** | **Next.js** (App Router) | Projenin temel çatısını ve yönlendirme yapısını oluşturur. | 
+| **Dil** | **TypeScript** | Daha güvenli ve ölçeklenebilir kod yazmak için kullanılmıştır. | 
+| **Styling** | **Tailwind CSS** | Tamamen responsive (duyarlı) ve hızlı stil geliştirmek için kullanılmıştır. | 
+| **Grafik** | **Recharts** | Dashboard'daki "Haftalık Takipçi Büyümesi" grafiğini oluşturmak için kullanılmıştır. | 
+| **İkonlar** | **Lucide React** | Header ve Sidebar'daki tüm SVG ikonları sağlar. | 
+| **Veri** | **Hard-coded JSON** | Veriler API çağrısı yapılmadan doğrudan kod içine gömülmüştür. | 
 
-## Nasıl çalıştırırım?
-1. npm install
-2. npm run dev
-3. Tarayıcıda http://localhost:3000/login
+   ⚙️ Proje Kurulumu ve Çalıştırma
+Bu projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin:
+**1- Depoyu Klonlayın:**
+git clone git@github.com:SevvalMarasli/influencer_dashboard.git
+cd infofluencer_dashboard
 
-## Kullanılan teknolojiler
-- Next.js (App Router) + TypeScript
-- TailwindCSS
-- Recharts
-- (Opsiyonel: shadcn/ui)
+**2- Bağımlılıkları Yükleyin:**
+# npm install
 
-## Tasarım tercihleri (2-3 madde)
-- Minimal, beyaz zemin + pembe vurgu ile okunabilirlik ön planda.
-- Mobil uyumlu sidebar (hamburger) ile küçük ekranlar göz önünde bulunduruldu.
-- KPI kartları hızlı bakış için net, grafik detay için Recharts kullanıldı.
+**3- Projeyi Başlatın:**
+# npm run dev
 
-----------
+**4- Uygulamayı Ziyaret Edin:** Tarayıcınızda http://localhost:3000 adresine giderek uygulamayı görüntüleyebilirsiniz.
 
+   🚪 Uygulama Girişi (Login)
+Uygulama / yolunda açılır ve kullanıcı doğrulamasını gerektirir.
+| Alan | Değer | 
+ | ----- | ----- | 
+| **E-posta (Hard-coded)** | test@test.com | 
+| **Şifre (Hard-coded)** | 1234 | 
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+- Başarılı girişin ardından kullanıcı otomatik olarak /Dashboard yoluna yönlendirilir.
+- Hata durumlarında ekranda bilgilendirme mesajı gösterilir.
 
-## Getting Started
+   🎨 Tasarım Tercihleri ve Estetik Yaklaşım
+Projenin genel stil ve tasarımında aşağıdaki yaklaşımlar benimsenmiştir:
+1. Minimalizm ve Hiyerarşi: Tailwind CSS kullanılarak beyaz alanlar (whitespace) maksimize edilmiş, temel veriler (KPI'lar ve Grafik) merkezi bir role oturtularak kullanıcı için net bir görsel hiyerarşi oluşturulmuştur.
+2. Marka Rengi ve Vurgu: Marka rengi olarak koyu mor (indigo-700 ve türevleri) tercih edilmiştir. Bu renk; aktif menü öğeleri, grafik çizgisi ve butonlar gibi etkileşimli elemanlarda vurgu amacıyla kullanılarak dikkat çekici bir estetik sağlamıştır.
+3. Tam Duyarlılık (Full Responsive): Tüm bileşenler, mobil öncelikli yaklaşımla tasarlanmıştır. Sidebar, küçük ekranlarda gizlenir hale getirilmiş ve KPI kartları, ekran genişliğine göre otomatik olarak tek sütuna düşecek şekilde (responsive grid) ayarlanmıştır.
+4. Kullanıcı Deneyimi (UX): Animasyonlar, gölgeler (shadow-xl) ve yuvarlak köşeler (rounded-xl) kullanılarak arayüze modern ve "kullanılabilir" bir his verilmiştir.
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
