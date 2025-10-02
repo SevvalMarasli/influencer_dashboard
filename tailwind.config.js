@@ -15,7 +15,7 @@ module.exports = {
         errorRed: "#EF4444",
         darkText: "#1F2937",
         grayText: "#6B7280",
-        sidebarBg: "#F9FAFB",
+        sidebarBg: "#e8eef4",
         cardBg: "#FFFFFF",
         softPink: "#FFC0CB",
         softBlue: "#ADD8E6",
@@ -23,6 +23,7 @@ module.exports = {
         primaryBlue: "#eff3f5",
         royalPurple: "#562576",
         deepNavy: "#232b4a",
+        pink: "#eddcf5",
       },
       boxShadow: {
         // Kartın hafif gölgesini iyileştirmek için

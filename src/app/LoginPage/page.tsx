@@ -57,7 +57,9 @@ export default function LoginPage() {
 
           {/* Başlık */}
           <h1
-            className="font-extrabold text-darkPurple tracking-wide text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-poppins"
+            className="font-extrabold tracking-wide text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-poppins
+            bg-gradient-to-r from-royalPurple to-darkPurple 
+                       bg-clip-text text-transparent"
           >
             INFOFLUENCER
           </h1>
